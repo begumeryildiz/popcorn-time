@@ -1,5 +1,5 @@
 import moviesArray from "../data/movies.json"
-import Movie from "./Movie";
+import "./Main.css"
 
 function Main() {
 
@@ -10,11 +10,10 @@ function Main() {
 
             {moviesArray.map(movie => {
                 return (
-                    <Movie
-                        title={movie.title}
-                        rating={movie.rating}
-                    />
-                )
+                    <div key={movie.id} className="movie">
+                        <h2>Title: {movie.title}</h2>
+                        <h3>Rating: {movie.rating}</h3>
+                    </div>)
             })}
 
         </div >
