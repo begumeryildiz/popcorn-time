@@ -17,7 +17,7 @@ function Movie(props) {
 
             {/* {movie.imgURL && <img src={movie.imgURL} alt={movie.title} />} */}
 
-            <button onClick={() =>  {props.callbackToDeleteMovie(props.id)}}>Delete</button>
+            <button onClick={() =>  {props.callbackToDelete(props.id)}}>Delete</button>
         </div>
     );
 }

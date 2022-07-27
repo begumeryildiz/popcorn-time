@@ -34,7 +34,7 @@ function App() {
   return (
     <>
       <Header numberOfMovies={movies.length}/>
-      <Main movies={movies}/>
+      <Main movies={movies} callbackToDelete={deleteMovie}/>
       <Footer />
     </>
   );
