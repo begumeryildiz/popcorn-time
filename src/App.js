@@ -39,7 +39,8 @@ function App() {
       rating,
       imgURL
     };
-
+    
+     // update list of movies
     setMovies( (prevMovies) => {
       return [newMovie, ...prevMovies];
     });
@@ -49,6 +50,13 @@ function App() {
     //   copy.unshift(newMovie);
     //   return copy;
     // });
+
+
+
+    // clear form
+    setTitle("");
+    setRating("");
+    setImgURL("");
 
   }
 
